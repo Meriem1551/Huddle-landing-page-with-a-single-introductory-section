@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    /*colors*/
+    --Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+
+/*fonts*/
+--Font-family1:'Poppins';
+--Font-family2:'Open Sans';
+--Font-weight-poppins-regular:400;
+--Font-weight-poppins-semiBold:600;
+--Font-weight-openSans-regular:400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url(./images/bg-desktop.svg);
+   background-size: 90%;
+   background-repeat: no-repeat;
+   background-color: var(--Violet);
+   padding-top: 40px;
+   padding-left: 60px;
+}
+header{
+    margin-bottom: 60px;
+}
+main{
+    display: flex;
+}
+main>div{
+    padding-left: 60px;
+    padding-top: 40px;
+    margin-left: -10px;
+}
+h1{
+    font-family: var(--Font-family1);
+    font-weight: var(--Font-weight-poppins-semiBold);
+    color: white;
+    width: 400px;
+}
+p{
+    font-family: var(--Font-family2);
+    font-weight: var(--Font-weight-openSans-regular);
+    font-size: 15px;
+    margin-top: 30px;
+    width: 430px;
+    color: white;
+}
+button{
+    padding:10px 55px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    font-family: var(--Font-family1);
+    font-weight: var(--Font-weight-poppins-regular);
+    font-size: 15px;
+    color: var(--Violet);
+    box-shadow:5px 5px 10px  hsl(258, 34%, 28%);
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 900px;
+    margin-bottom: 30px;
+}
+.fb-icon{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px 15px;
+}
+.twi-icon{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px 10px;
+}
+.ins-icon{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px 10px;
+}
+@media (max-width:550px) {
+    header>img{
+        width: 150px;
+        margin-left: -25px;
+    }
+    main{
+        flex-direction: column;
+    }
+    main>img{
+        width: 95%;
+        margin-left: -25px;
+    }
+    h1{
+        margin-left: -60px;
+        font-size: 22px;
+        width:250px;
+        text-align: center;
+    }
+    p{
+        margin-left: -75px;
+        width: 280px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    button{
+        padding:10px 70px;
+        margin-left: -40px;
+        margin-top: 30px;
+    }
+    footer{
+        margin-left: 15px;
+        margin-top: 90px;
+    }
+
+}
