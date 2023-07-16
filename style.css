@@ -76,16 +76,19 @@ footer{
     border: 2px solid white;
     border-radius: 100%;
     padding: 10px 15px;
+    filter: brightness(0) invert(1);
 }
 .twi-icon{
     border: 2px solid white;
     border-radius: 100%;
     padding: 10px 10px;
+    filter: brightness(0) invert(1);
 }
 .ins-icon{
     border: 2px solid white;
     border-radius: 100%;
     padding: 10px 10px;
+    filter: brightness(0) invert(1);
 }
 @media (max-width:550px) {
     header>img{
